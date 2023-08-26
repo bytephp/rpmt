@@ -1,0 +1,345 @@
+{
+    "url": "https://www.nobroker.in/api/v2/building/8a9f93897a3a4473017a3a6a81eb0da2/info",
+    "id": "8a9f93897a3a4473017a3a6a81eb0da2",
+    "name": "Prestige Pine Wood",
+    "address": {
+        "doorNo": null,
+        "street": null,
+        "locality": "Koramangala",
+        "area": null,
+        "city": "Bangalore",
+        "state": null,
+        "country": null,
+        "pincode": null,
+        "completeAddress": "Prestige Pine Wood, Koramangala, Bangalore, India",
+        "latitude": 12.931657542392022,
+        "longitude": 77.63460349702835
+    },
+    "images": [
+        {
+            "url": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/Prestige-Pine-Wood-Ext1",
+            "name": "Prestige-Pine-Wood-Ext1",
+            "tag": "Project Images",
+            "desc": null,
+            "width": 1170,
+            "height": 738,
+            "imagesMap": {
+                "original": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_2WRlc8GPs21625819599286_67710_iris_original.jpg",
+                "large": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_2WRlc8GPs21625819599286_67710_iris_large.jpg",
+                "medium": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_2WRlc8GPs21625819599286_67710_iris_medium.jpg",
+                "thumbnail": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_2WRlc8GPs21625819599286_67710_thumbnail.jpg"
+            }
+        },
+        {
+            "url": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/Prestige-Pine-Wood-Gym",
+            "name": "Prestige-Pine-Wood-Gym",
+            "tag": "Other Images",
+            "desc": null,
+            "width": 1170,
+            "height": 738,
+            "imagesMap": {
+                "original": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_spDbWaRfCc1625819629407_27051_iris_original.jpg",
+                "thumbnail": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_spDbWaRfCc1625819629407_27051_thumbnail.jpg",
+                "medium": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_spDbWaRfCc1625819629407_27051_iris_medium.jpg",
+                "large": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_spDbWaRfCc1625819629407_27051_iris_large.jpg"
+            }
+        },
+        {
+            "url": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/Prestige-Pine-Wood-Ext2",
+            "name": "Prestige-Pine-Wood-Ext2",
+            "tag": "Project Images",
+            "desc": null,
+            "width": 1170,
+            "height": 738,
+            "imagesMap": {
+                "original": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_M8D5KDv3bU1625819610240_17411_iris_original.jpg",
+                "large": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_M8D5KDv3bU1625819610240_17411_iris_large.jpg",
+                "medium": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_M8D5KDv3bU1625819610240_17411_iris_medium.jpg",
+                "thumbnail": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_M8D5KDv3bU1625819610240_17411_thumbnail.jpg"
+            }
+        },
+        {
+            "url": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/Prestige-Pine-Wood-Ext3",
+            "name": "Prestige-Pine-Wood-Ext3",
+            "tag": "Outdoor Images",
+            "desc": null,
+            "width": 1170,
+            "height": 738,
+            "imagesMap": {
+                "original": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_5fqDtuZu2W1625819645781_38186_iris_original.jpg",
+                "large": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_5fqDtuZu2W1625819645781_38186_iris_large.jpg",
+                "thumbnail": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_5fqDtuZu2W1625819645781_38186_thumbnail.jpg",
+                "medium": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_5fqDtuZu2W1625819645781_38186_iris_medium.jpg"
+            }
+        }
+    ],
+    "floorPlan": [
+        {
+            "size": 848,
+            "category": "APARTMENT",
+            "images": [
+                {
+                    "url": null,
+                    "name": "2 BHK FloorPlan",
+                    "tag": "2 BHK, 848 Sq.Ft",
+                    "desc": null,
+                    "width": null,
+                    "height": null,
+                    "imagesMap": null
+                }
+            ]
+        },
+        {
+            "size": 959,
+            "category": "APARTMENT",
+            "images": [
+                {
+                    "url": null,
+                    "name": "2.5 BHK FloorPlan",
+                    "tag": "2.5 BHK, 959 Sq.Ft",
+                    "desc": null,
+                    "width": null,
+                    "height": null,
+                    "imagesMap": null
+                }
+            ]
+        },
+        {
+            "size": 1306,
+            "category": "APARTMENT",
+            "images": [
+                {
+                    "url": null,
+                    "name": "3 BHK FloorPlan",
+                    "tag": "3 BHK, 1306 Sq.Ft",
+                    "desc": null,
+                    "width": null,
+                    "height": null,
+                    "imagesMap": null
+                }
+            ]
+        },
+        {
+            "size": 1722,
+            "category": "APARTMENT",
+            "images": [
+                {
+                    "url": null,
+                    "name": "4 BHK FloorPlan",
+                    "tag": "4 BHK, 1722 Sq.Ft",
+                    "desc": null,
+                    "width": null,
+                    "height": null,
+                    "imagesMap": null
+                }
+            ]
+        }
+    ],
+    "amenities": [
+        "RWH",
+        "GYM",
+        "PB",
+        "FS",
+        "BOTH_PARKING",
+        "HK",
+        "CPA",
+        "LIFT",
+        "COMMUNITY_HALL",
+        "COMMON_GARDEN",
+        "SECURITY",
+        "CLUB",
+        "SWIMMING_POOL",
+        "BADMINTON_COURT",
+        "BASKETBALL_COURT",
+        "CCTV",
+        "TENNIS_COURT"
+    ],
+    "overview": {
+        "bhk": [
+            "BHK2",
+            "BHK_2_HALF",
+            "BHK3",
+            "BHK4"
+        ],
+        "categoryMap": {
+            "BHK2": [
+                "APARTMENT"
+            ],
+            "BHK_2_HALF": [
+                "APARTMENT"
+            ],
+            "BHK3": [
+                "APARTMENT"
+            ],
+            "BHK4": [
+                "APARTMENT"
+            ]
+        },
+        "loanInfoList": [
+            {
+                "bank": "SBI",
+                "interestRate": 7.55
+            },
+            {
+                "bank": "ICICI",
+                "interestRate": 7.5
+            },
+            {
+                "bank": "HDFC",
+                "interestRate": 7.55
+            }
+        ],
+        "parkingType": "BOTH",
+        "propertyType": "APARTMENT",
+        "waterSupply": "CORP_BORE",
+        "builder": {
+            "id": "ff80818168f068490168f06e0df0038a",
+            "name": "Prestige Group",
+            "phone": "9740209749",
+            "email": "faisal@prestigeconstructions.com",
+            "description": "Founded in 1986, Prestige Group has been a pioneer in creating innovative projects .Now with over 205 landmarks , Prestige group’s brand name has become popular . It has a diverse portfolio covering residential , commercial, retail and hospitality segments. Over the last decade, the Prestige group has firmly established itself as one of the leading and most successful developers of real estate in India. \n\nThe company has extended its wings in south India including big cities such as Chennai, Hyderabad, Kochi, Mysore, Bengaluru and has recently launched in Mumbai.The company team works with talented individuals who make sure that every project is reassuring and successful. \n",
+            "totalProjects": 100,
+            "establishmentDate": "1986-01-01",
+            "imagePlaceHolder": "https://assets.nobroker.in/media/builder/{name}",
+            "logo": null
+        },
+        "projectSize": {
+            "numOfBuildings": null,
+            "numOfUnits": 256,
+            "areaMap": {
+                "SQUARE_FEET": 111513,
+                "ACRE": 2
+            },
+            "areaMapDouble": {
+                "SQUARE_FEET": 111513,
+                "ACRE": 2.56
+            }
+        },
+        "unitSizeInfo": {
+            "minUnitSize": 848,
+            "maxUnitSize": 1722,
+            "unit": "SQUARE_FEET"
+        },
+        "age": null,
+        "area": 111513,
+        "minPrice": 17493185,
+        "launchDate": null,
+        "readyToMove": true,
+        "availableFrom": "2020-06-01T05:30:00+05:30",
+        "gatedSecurity": true
+    },
+    "additionalInfo": {
+        "reraId": "PRM/KA/RERA/1251/310/PR/170913/000109",
+        "buildingUnits": null,
+        "totalUnits": 256,
+        "minPrice": "1.75 Crores",
+        "minPriceLong": 17493185,
+        "maxPrice": "3.39 Crores",
+        "maxPriceLong": 33900000,
+        "propertyArea": 111513,
+        "launchDate": null,
+        "buildingAge": {
+            "years": 13,
+            "months": 10
+        },
+        "uspList": [
+            "Plenty of modern amenities",
+            "Contemporary , luxury apartments",
+            "Located at the heart of the city"
+        ]
+    },
+    "mediaResponse": {
+        "buildingMedia": {
+            "logo": null,
+            "brochure": {
+                "id": "XBImYo7dMI1632486194753",
+                "url": "gVE1YSOTDfIVJIq4THwvuIFIDrvvrIFDDtrGvEGTIMTMII4D-_7c-HxK.pdf"
+            },
+            "bannerMap": {},
+            "imageList": [
+                {
+                    "id": "VOjsGp5aY71625819599372",
+                    "title": null,
+                    "name": "Prestige-Pine-Wood-Ext1",
+                    "type": null,
+                    "imagesMap": {
+                        "original": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_2WRlc8GPs21625819599286_67710_iris_original.jpg",
+                        "large": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_2WRlc8GPs21625819599286_67710_iris_large.jpg",
+                        "medium": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_2WRlc8GPs21625819599286_67710_iris_medium.jpg",
+                        "thumbnail": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_2WRlc8GPs21625819599286_67710_thumbnail.jpg"
+                    },
+                    "h": 738,
+                    "w": 1170,
+                    "state": "APPROVED",
+                    "displayPic": true,
+                    "disAffinity": 10,
+                    "imageCategory": "PROJECT_IMAGE"
+                },
+                {
+                    "id": "Ilqyte3feI1625819629573",
+                    "title": null,
+                    "name": "Prestige-Pine-Wood-Gym",
+                    "type": null,
+                    "imagesMap": {
+                        "original": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_spDbWaRfCc1625819629407_27051_iris_original.jpg",
+                        "thumbnail": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_spDbWaRfCc1625819629407_27051_thumbnail.jpg",
+                        "medium": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_spDbWaRfCc1625819629407_27051_iris_medium.jpg",
+                        "large": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_spDbWaRfCc1625819629407_27051_iris_large.jpg"
+                    },
+                    "h": 738,
+                    "w": 1170,
+                    "state": "APPROVED",
+                    "displayPic": false,
+                    "disAffinity": 0,
+                    "imageCategory": "OTHERS"
+                },
+                {
+                    "id": "XLS06EWsyr1625819610353",
+                    "title": null,
+                    "name": "Prestige-Pine-Wood-Ext2",
+                    "type": null,
+                    "imagesMap": {
+                        "original": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_M8D5KDv3bU1625819610240_17411_iris_original.jpg",
+                        "large": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_M8D5KDv3bU1625819610240_17411_iris_large.jpg",
+                        "medium": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_M8D5KDv3bU1625819610240_17411_iris_medium.jpg",
+                        "thumbnail": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_M8D5KDv3bU1625819610240_17411_thumbnail.jpg"
+                    },
+                    "h": 738,
+                    "w": 1170,
+                    "state": "APPROVED",
+                    "displayPic": false,
+                    "disAffinity": 0,
+                    "imageCategory": "PROJECT_IMAGE"
+                },
+                {
+                    "id": "zs38f2kLNb1625819645861",
+                    "title": null,
+                    "name": "Prestige-Pine-Wood-Ext3",
+                    "type": null,
+                    "imagesMap": {
+                        "original": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_5fqDtuZu2W1625819645781_38186_iris_original.jpg",
+                        "large": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_5fqDtuZu2W1625819645781_38186_iris_large.jpg",
+                        "thumbnail": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_5fqDtuZu2W1625819645781_38186_thumbnail.jpg",
+                        "medium": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/8a9f93897a3a4473017a3a6a81eb0da2_project_image_5fqDtuZu2W1625819645781_38186_iris_medium.jpg"
+                    },
+                    "h": 738,
+                    "w": 1170,
+                    "state": "APPROVED",
+                    "displayPic": false,
+                    "disAffinity": 0,
+                    "imageCategory": "OUTDOOR"
+                }
+            ],
+            "videoList": []
+        },
+        "logoMediaPlaceHolder": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/logo/{name}",
+        "brochurePlaceHolder": "https://assets.nobroker.in/brochures/8a9f93897a3a4473017a3a6a81eb0da2/{name}",
+        "bannerMediaPlaceHolder": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/banner/{name}",
+        "imgMediaPlaceHolder": "https://assets.nobroker.in/media/building/8a9f93897a3a4473017a3a6a81eb0da2/images/{name}"
+    },
+    "description": "Prestige Pinewood is located at the prime land area of Koramangala in a spacious 2.56 acres. They provide 2, 3 and 4 BHK apartments with quality and comfort. Has plenty of amenities such as billiards, gymnasium, health club, mini theatre, swimming pool and more. These amenities are an amazing way to indulge in a social lifestyle. The master plan of these properties offers the finest view of the adjacent landscape parks and the overall architecture and space planning has been designed explicitly to spell luxury. The use of good quality and tasteful material achieves a high-end look.This is a great property to invest in as its minimalistic looks are very appealing and is a good valued asset.",
+    "about": null,
+    "seoDescription": "Prestige Pinewood is located at the prime land area of Koramangala in a spacious 2.56 acres. They provide 2, 3 and 4 BHK apartments with quality and comfort. Has plenty of amenities such as billiards, gymnasium, health club, mini theatre, swimming pool and more. These amenities are an amazing way to indulge in a social lifestyle. The master plan of these properties offers the finest view of the adjacent landscape parks and the overall architecture and space planning has been designed explicitly to spell luxury. The use of good quality and tasteful material achieves a high-end look.This is a great property to invest in as its minimalistic looks are very appealing and is a good valued asset.",
+    "showProjectPage": true,
+    "shortlisted": false
+}

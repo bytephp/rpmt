@@ -1,0 +1,52 @@
+{
+    "url": "https: //www.nobroker.in/api/v2/building/8a9f93897a3a4473017a3a6a81eb0da2/nearby-places",
+    "business_status": "CLOSED_TEMPORARILY",
+    "geometry": {
+        "location": {
+            "lat": 12.9343006,
+            "lng": 77.6112429
+        },
+        "viewport": {
+            "northeast": {
+                "lat": 12.9359113302915,
+                "lng": 77.6126730802915
+            },
+            "southwest": {
+                "lat": 12.9332133697085,
+                "lng": 77.6099751197085
+            }
+        }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/movies-71.png",
+    "name": "PVR Cinemas - Koramangala",
+    "permanently_closed": true,
+    "photos": [
+        {
+            "height": 4000,
+            "html_attributions": [
+                "<a href=\"https://maps.google.com/maps/contrib/111368395884132921181\">Razan Mohammed Hashim</a>"
+            ],
+            "photo_reference": "Aap_uEA7KYZFGjaaWUoHdxlNnaQIywilN04yq2L7SXVr8S9Xp1CtVngNA_AydnKV6muRxbpWjIC8VGHdiSfmQ7_GHL2r0-okQz6WkaVAYre67HGuEe9VExq1bJA2s4EWwtzjYgOMmwlcmXhOJ4h_2pgUHvr7f2i8725ciQeAreGk5ILwA67M",
+            "width": 3000
+        }
+    ],
+    "place_id": "ChIJO_zpj00UrjsRXS55DWfGeac",
+    "plus_code": {
+        "compound_code": "WJM6+PF Bengaluru, Karnataka, India",
+        "global_code": "7J4VWJM6+PF"
+    },
+    "rating": 4.3,
+    "reference": "ChIJO_zpj00UrjsRXS55DWfGeac",
+    "scope": "GOOGLE",
+    "types": [
+        "movie_theater",
+        "point_of_interest",
+        "establishment"
+    ],
+    "user_ratings_total": 28648,
+    "vicinity": "The Forum Mall, 21-22, Adugodi Main Road Koramangala, Koramangala Road, Chikku Lakshmaiah Layout, Adugodi, Bengaluru",
+    "latitude": 12.9343006,
+    "longitude": 77.6112429,
+    "duration": "12 mins",
+    "distance": "3.6 km"
+}
