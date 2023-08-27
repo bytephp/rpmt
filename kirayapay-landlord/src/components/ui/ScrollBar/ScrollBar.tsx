@@ -23,6 +23,7 @@ const ScrollBar = forwardRef<ScrollbarRef, ScrollbarProps>((props, ref) => {
                         ...(direction === 'rtl' && {
                             marginLeft: props.style.marginRight,
                             marginRight: 0,
+                            overflow: "auto"
                         }),
                     }}
                 />

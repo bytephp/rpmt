@@ -20,31 +20,31 @@ export const protectedRoutes = [
     {
         key: 'properties',
         path: '/properties',
-        component: lazy(() => import('@/views/messages/chat')),
+        component: lazy(() => import('@/views/properties/properties')),
         authority: [],
     },
     {
         key: 'maintenance',
         path: '/maintenance',
-        component: lazy(() => import('@/views/messages/chat')),
+        component: lazy(() => import('@/views/maintenance/maintenance')),
         authority: [],
     },
     {
         key: 'leases',
         path: '/leases',
-        component: lazy(() => import('@/views/messages/chat')),
+        component: lazy(() => import('@/views/leases/leases')),
         authority: [],
     },
     {
         key: 'tenants',
         path: '/tenants',
-        component: lazy(() => import('@/views/messages/chat')),
+        component: lazy(() => import('@/views/tenants/tenants')),
         authority: [],
     },
     {
         key: 'financial.payments',
         path: '/payments',
-        component: lazy(() => import('@/views/messages/chat')),
+        component: lazy(() => import('@/views/payments/payments')),
         authority: [],
     },
 ]
