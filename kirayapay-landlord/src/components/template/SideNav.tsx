@@ -14,6 +14,7 @@ import navigationConfig from '@/configs/navigation.config'
 import VerticalMenuContent from '@/components/template/VerticalMenuContent'
 import useResponsive from '@/utils/hooks/useResponsive'
 import { useAppSelector } from '@/store'
+import HeaderLogo from './HeaderLogo'
 
 const sideNavStyle = {
     width: SIDE_NAV_WIDTH,
@@ -49,19 +50,7 @@ const SideNav = () => {
         }
         return `side-nav-${navMode}`
     }
-
-    const logoMode = () => {
-        if (navMode === NAV_MODE_THEMED) {
-            return NAV_MODE_DARK
-        }
-
-        if (navMode === NAV_MODE_TRANSPARENT) {
-            return mode
-        }
-
-        return navMode
-    }
-
+    
     const menuContent = (
         <VerticalMenuContent
             navMode={navMode}
@@ -87,15 +76,15 @@ const SideNav = () => {
                     )}
                 >
                     <div className="side-nav-header">
-                        <Logo
+                        <HeaderLogo sideNavCollapse={sideNavCollapse}/>
+                        {/* <Logo
                             mode={logoMode()}
                             type={sideNavCollapse ? 'streamline' : 'full'}
-                            className={
-                                sideNavCollapse
-                                    ? SIDE_NAV_CONTENT_GUTTER
-                                    : LOGO_X_GUTTER
+                            className={`py-2 ${sideNavCollapse
+                                ? SIDE_NAV_CONTENT_GUTTER
+                                : LOGO_X_GUTTER}`
                             }
-                        />
+                        /> */}
                     </div>
                     {sideNavCollapse ? (
                         menuContent
