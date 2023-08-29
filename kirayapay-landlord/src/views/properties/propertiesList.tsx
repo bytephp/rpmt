@@ -5,7 +5,7 @@ import { PageHeader } from '@/components/shared/pageHeader'
 const PropertiesList = () => {
     return (
         <Container className="h-full">
-            <PageHeader pageTitle={'Properties'} href={'/properties/add'} addButtonTitle={'Add New Property'} />
+            <PageHeader pageTitle={'Properties'} href={'/properties/add'} addButtonTitle={'ADD NEW PROPERTY'} />
             {/* <ProjectListContent /> */}
         </Container>
     )

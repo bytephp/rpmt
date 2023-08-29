@@ -113,8 +113,9 @@ const PageHeader = (props: PageHeader) => {
                 {
                     addButtonTitle && <ActionLink to={href}>
                         <Button
-                            size="sm"
-                            variant="solid"
+                            size="md"
+                            variant="twoTone"
+                            shape='circle'
                             icon={<HiOutlinePlusCircle />}
                             // onClick={onAddNewProject}
                         >

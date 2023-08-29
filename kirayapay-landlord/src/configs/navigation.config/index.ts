@@ -71,7 +71,7 @@ const navigationConfig: NavigationTree[] = [
         key: 'financial',
         path: '',
         title: 'Financial',
-        translateKey: 'nav.financial',
+        translateKey: 'nav.financial.financial',
         icon: '',
         type: NAV_ITEM_TYPE_TITLE,
         authority: [],

@@ -1,8 +1,16 @@
 {
     "nav": {
         "home": "Home",
+        "messages": "Messages",
+        "properties": "Properties",
+        "maintenance": "Maintenance",
+        "leases": "Leases",
+        "tenants": "Tenants",
         "singleMenuItem": "Single menu item",
-        "financial": "Financial",
+        "financial": {
+            "financial":"Financial",
+            "payments":"Payments"
+        },
         "collapseMenu": {
             "collapseMenu": "Collapse menu item",
             "item1": "Collapse menu item 1",
