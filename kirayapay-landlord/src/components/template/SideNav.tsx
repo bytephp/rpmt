@@ -77,14 +77,6 @@ const SideNav = () => {
                 >
                     <div className="side-nav-header">
                         <HeaderLogo sideNavCollapse={sideNavCollapse}/>
-                        {/* <Logo
-                            mode={logoMode()}
-                            type={sideNavCollapse ? 'streamline' : 'full'}
-                            className={`py-2 ${sideNavCollapse
-                                ? SIDE_NAV_CONTENT_GUTTER
-                                : LOGO_X_GUTTER}`
-                            }
-                        /> */}
                     </div>
                     {sideNavCollapse ? (
                         menuContent
