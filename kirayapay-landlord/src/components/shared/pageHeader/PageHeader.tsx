@@ -14,21 +14,38 @@ import {
     toggleView,
     toggleSort,
     setSearch,
-    toggleNewProjectDialog,
     useAppDispatch,
     useAppSelector,
-} from '../store'
+} from './store'
+import type { CommonProps } from '@/@types/common'
 import debounce from 'lodash/debounce'
 import type { ChangeEvent } from 'react'
+import ActionLink from '../ActionLink'
+import { injectReducer } from '@/store'
+import reducer from './store'
 
-const ActionBar = () => {
+injectReducer('pageHeader', reducer)
+
+interface PageHeader extends CommonProps {
+    pageTitle?: string
+    addButtonTitle?: string
+    href?: string
+}
+
+const PageHeader = (props: PageHeader) => {
+    const {
+        pageTitle,
+        addButtonTitle,
+        href,
+    } = props
+
     const dispatch = useAppDispatch()
 
     const inputRef = useRef(null)
 
-    const view = useAppSelector((state) => state.projectList.data.view)
+    const view = useAppSelector((state) => state?.pageHeader?.data?.view)
 
-    const { sort } = useAppSelector((state) => state.projectList.data.query)
+    const { sort } = useAppSelector((state) => state?.pageHeader?.data?.query)
 
     const onViewToggle = () => {
         dispatch(toggleView(view === 'grid' ? 'list' : 'grid'))
@@ -38,9 +55,9 @@ const ActionBar = () => {
         dispatch(toggleSort(sort === 'asc' ? 'desc' : 'asc'))
     }
 
-    const onAddNewProject = () => {
-        dispatch(toggleNewProjectDialog(true))
-    }
+    // const onAddNewProject = () => {        
+    //     dispatch(toggleNewProjectDialog(true))
+    // }
 
     const debounceFn = debounce(handleDebounceFn, 500)
 
@@ -54,7 +71,7 @@ const ActionBar = () => {
 
     return (
         <div className="lg:flex items-center justify-between mb-4">
-            <h3 className="mb-4 lg:mb-0">Project List</h3>
+            <h3 className="mb-4 lg:mb-0">{pageTitle || ''}</h3>
             <div className="flex flex-col md:flex-row md:items-center gap-1">
                 <Input
                     ref={inputRef}
@@ -93,17 +110,23 @@ const ActionBar = () => {
                         onClick={onToggleSort}
                     />
                 </Tooltip>
-                <Button
-                    size="sm"
-                    variant="twoTone"
-                    icon={<HiOutlinePlusCircle />}
-                    onClick={onAddNewProject}
-                >
-                    New Project
-                </Button>
+                {
+                    addButtonTitle && <ActionLink to={href}>
+                        <Button
+                            size="sm"
+                            variant="solid"
+                            icon={<HiOutlinePlusCircle />}
+                            // onClick={onAddNewProject}
+                        >
+                            {addButtonTitle}
+                        </Button>
+                    </ActionLink>
+                }
+                
+                
             </div>
         </div>
     )
 }
 
-export default ActionBar
+export default PageHeader

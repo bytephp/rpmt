@@ -26,7 +26,7 @@ export const protectedRoutes = [
     {
         key: 'maintenance',
         path: '/maintenance',
-        component: lazy(() => import('@/views/maintenance/maintenance')),
+        component: lazy(() => import('@/views/maintenance/maintenanceList')),
         authority: [],
     },
     {

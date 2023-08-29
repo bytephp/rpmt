@@ -26,22 +26,22 @@ type Project = {
     member: Omit<Member, 'id' | 'email'>[]
 }
 
-type ProjectList = Project[]
+type PageHeader = Project[]
 
 type Query = {
     sort: 'asc' | 'desc' | ''
     search: ''
 }
 
-type GetProjectListRequest = Query
+type GetPageHeaderRequest = Query
 
-type GetProjectListResponse = ProjectList
+type GetPageHeaderResponse = PageHeader
 
 type GetScrumBoardtMembersResponse = {
     allMembers: Member[]
 }
 
-type PutProjectListRequest = {
+type PutPageHeaderRequest = {
     id: string
     name: string
     desc: string
@@ -51,11 +51,11 @@ type PutProjectListRequest = {
     member?: Omit<Member, 'email' | 'id'>[]
 }
 
-type PutProjectListResponse = ProjectList
+type PutPageHeaderResponse = PageHeader
 
-export type ProjectListState = {
+export type PageHeaderState = {
     loading: boolean
-    projectList: ProjectList
+    pageHeader: PageHeader
     allMembers: {
         value: string
         label: string
@@ -66,14 +66,14 @@ export type ProjectListState = {
     newProjectDialog: boolean
 }
 
-export const SLICE_NAME = 'projectList'
+export const SLICE_NAME = 'pageHeader'
 
 export const getList = createAsyncThunk(
     SLICE_NAME + '/getList',
-    async (data: GetProjectListRequest) => {
+    async (data: GetPageHeaderRequest) => {
         const response = await apiGetProjectList<
-            GetProjectListResponse,
-            GetProjectListRequest
+            GetPageHeaderResponse,
+            GetPageHeaderRequest
         >(data)
         return response.data
     }
@@ -95,18 +95,18 @@ export const getMembers = createAsyncThunk(
 
 export const putProject = createAsyncThunk(
     SLICE_NAME + '/putProject',
-    async (data: PutProjectListRequest) => {
+    async (data: PutPageHeaderRequest) => {
         const response = await apiPutProjectList<
-            PutProjectListResponse,
-            PutProjectListRequest
+            PutPageHeaderResponse,
+            PutPageHeaderRequest
         >(data)
         return response.data
     }
 )
 
-const initialState: ProjectListState = {
+const initialState: PageHeaderState = {
     loading: false,
-    projectList: [],
+    pageHeader: [],
     allMembers: [],
     view: 'grid',
     query: {
@@ -116,7 +116,7 @@ const initialState: ProjectListState = {
     newProjectDialog: false,
 }
 
-const projectListSlice = createSlice({
+const pageHeaderSlice = createSlice({
     name: `${SLICE_NAME}/state`,
     initialState,
     reducers: {
@@ -127,16 +127,15 @@ const projectListSlice = createSlice({
             state.query.sort = action.payload
         },
         setSearch: (state, action) => {
+            console.log(action);
+            
             state.query.search = action.payload
-        },
-        toggleNewProjectDialog: (state, action) => {
-            state.newProjectDialog = action.payload
         },
     },
     extraReducers: (builder) => {
         builder
             .addCase(getList.fulfilled, (state, action) => {
-                state.projectList = action.payload
+                state.pageHeader = action.payload
                 state.loading = false
             })
             .addCase(getList.pending, (state) => {
@@ -146,12 +145,12 @@ const projectListSlice = createSlice({
                 state.allMembers = action.payload
             })
             .addCase(putProject.fulfilled, (state, action) => {
-                state.projectList = action.payload
+                state.pageHeader = action.payload
             })
     },
 })
 
-export const { toggleView, toggleSort, toggleNewProjectDialog, setSearch } =
-    projectListSlice.actions
+export const { toggleView, toggleSort, setSearch } =
+    pageHeaderSlice.actions
 
-export default projectListSlice.reducer
+export default pageHeaderSlice.reducer
