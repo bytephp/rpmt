@@ -3,7 +3,8 @@ import appConfig from '@/configs/app.config'
 
 import { signInUserData } from './data/authData'
 
-import { authFakeApi } from './fakeApi'
+import { authFakeApi, projectFakeApi } from './fakeApi'
+import { projectList } from './data/projectData'
 
 const { apiPrefix } = appConfig
 
@@ -13,6 +14,7 @@ export function mockServer({ environment = 'test' }) {
         seeds(server) {
             server.db.loadData({
                 signInUserData,
+                projectList,
             })
         },
         routes() {
@@ -25,6 +27,7 @@ export function mockServer({ environment = 'test' }) {
             this.passthrough()
 
             authFakeApi(this, apiPrefix)
+            projectFakeApi(this, apiPrefix)
         },
     })
 }
