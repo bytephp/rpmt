@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import Button from '@/components/ui/Button'
 import Input from '@/components/ui/Input'
+import { useNavigate } from 'react-router-dom';
 import Tooltip from '@/components/ui/Tooltip'
 import {
     HiOutlinePlusCircle,
@@ -23,6 +24,7 @@ import type { ChangeEvent } from 'react'
 import ActionLink from '../ActionLink'
 import { injectReducer } from '@/store'
 import reducer from './store'
+import { HiOutlineArrowLeft } from 'react-icons/hi2'
 
 injectReducer('pageHeader', reducer)
 
@@ -30,15 +32,22 @@ interface PageHeader extends CommonProps {
     pageTitle?: string
     addButtonTitle?: string
     href?: string
+    showSortButton?: boolean
+    showSearch?: boolean
+    backButton?: boolean
 }
 
 const PageHeader = (props: PageHeader) => {
     const {
         pageTitle,
         addButtonTitle,
+        backButton =false,
         href,
+        showSortButton = true,
+        showSearch = true,
     } = props
 
+    const navigate = useNavigate();
     const dispatch = useAppDispatch()
 
     const inputRef = useRef(null)
@@ -49,6 +58,10 @@ const PageHeader = (props: PageHeader) => {
 
     const onViewToggle = () => {
         dispatch(toggleView(view === 'grid' ? 'list' : 'grid'))
+    }
+    const goBack = () => {
+        backButton &&
+            navigate(-1);
     }
 
     const onToggleSort = () => {
@@ -71,45 +84,54 @@ const PageHeader = (props: PageHeader) => {
 
     return (
         <div className="lg:flex items-center justify-between mb-4">
-            <h3 className="mb-4 lg:mb-0">{pageTitle || ''}</h3>
+            <h3 className={`mb-4 lg:mb-0 flex items-center ${backButton && "cursor-pointer"}`} onClick={() => goBack()}>
+                {backButton && <HiOutlineArrowLeft className='mr-2' />}
+                {pageTitle || ''}
+            </h3>
             <div className="flex flex-col md:flex-row md:items-center gap-1">
-                <Input
-                    ref={inputRef}
-                    size="sm"
-                    placeholder="Search"
-                    prefix={<HiOutlineSearch className="text-lg" />}
-                    onChange={handleInputChange}
-                />
-                <Tooltip title={view === 'grid' ? 'List view' : 'Grid view'}>
-                    <Button
-                        className="hidden md:flex"
-                        variant="plain"
+                {
+                    showSearch && <Input
+                        ref={inputRef}
                         size="sm"
-                        icon={
-                            view === 'grid' ? (
-                                <HiOutlineViewList />
-                            ) : (
-                                <HiOutlineViewGrid />
-                            )
-                        }
-                        onClick={() => onViewToggle()}
+                        placeholder="Search"
+                        prefix={<HiOutlineSearch className="text-lg" />}
+                        onChange={handleInputChange}
                     />
-                </Tooltip>
-                <Tooltip title={`Sort: ${sort === 'asc' ? 'A-Z' : 'Z-A'}`}>
-                    <Button
-                        className="hidden md:flex"
-                        variant="plain"
-                        size="sm"
-                        icon={
-                            sort === 'asc' ? (
-                                <HiOutlineSortAscending />
-                            ) : (
-                                <HiOutlineSortDescending />
-                            )
-                        }
-                        onClick={onToggleSort}
-                    />
-                </Tooltip>
+                }
+                {
+                    showSortButton && <><Tooltip title={view === 'grid' ? 'List view' : 'Grid view'}>
+                        <Button
+                            className="hidden md:flex"
+                            variant="plain"
+                            size="sm"
+                            icon={
+                                view === 'grid' ? (
+                                    <HiOutlineViewList />
+                                ) : (
+                                    <HiOutlineViewGrid />
+                                )
+                            }
+                            onClick={() => onViewToggle()}
+                        />
+                    </Tooltip>
+                        <Tooltip title={`Sort: ${sort === 'asc' ? 'A-Z' : 'Z-A'}`}>
+                            <Button
+                                className="hidden md:flex"
+                                variant="plain"
+                                size="sm"
+                                icon={
+                                    sort === 'asc' ? (
+                                        <HiOutlineSortAscending />
+                                    ) : (
+                                        <HiOutlineSortDescending />
+                                    )
+                                }
+                                onClick={onToggleSort}
+                            />
+                        </Tooltip></>
+                }
+
+
                 {
                     addButtonTitle && <ActionLink to={href}>
                         <Button
@@ -117,14 +139,14 @@ const PageHeader = (props: PageHeader) => {
                             variant="twoTone"
                             shape='circle'
                             icon={<HiOutlinePlusCircle />}
-                            // onClick={onAddNewProject}
+                        // onClick={onAddNewProject}
                         >
                             {addButtonTitle}
                         </Button>
                     </ActionLink>
                 }
-                
-                
+
+
             </div>
         </div>
     )

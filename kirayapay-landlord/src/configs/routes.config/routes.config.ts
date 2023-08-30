@@ -32,7 +32,7 @@ export const protectedRoutes = [
     {
         key: 'properties.show',
         path: '/properties/:propertyId',
-        component: lazy(() => import('@/views/properties/propertiesList')),
+        component: lazy(() => import('@/views/properties/propertiesShow')),
         authority: [],
     },
     {
