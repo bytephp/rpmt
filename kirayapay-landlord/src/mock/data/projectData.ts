@@ -1,11 +1,11 @@
-const y = new Date().getFullYear()
+ const y = new Date().getFullYear()
 
 export const projectList = [
     {
         id: 27,
-        name: 'EVO SaaS',
+        name: 'Sannidhi Paradise',
         category: 'Web Application',
-        desc: 'Most of you are familiar with the virtues of a programmer',
+        desc: 'Green Glen Layout, Bellandur, Banglore - 560103',
         attachmentCount: 12,
         totalTask: 32,
         completedTask: 27,
@@ -33,9 +33,9 @@ export const projectList = [
     },
     {
         id: 28,
-        name: 'AIA Bill App',
+        name: 'Suncity Apartment',
         category: 'Mobile Application',
-        desc: 'We are not shipping your machine!',
+        desc: 'Sarjapura Ring Road, 6th Main Road - 560103',
         attachmentCount: 5,
         totalTask: 36,
         completedTask: 15,

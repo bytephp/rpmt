@@ -25,13 +25,13 @@ export type GridItemProps = {
 }
 
 const GridItem = ({ data }: GridItemProps) => {
-    const { name, totalTask, completedTask, progression, desc, member } = data
+    const { name, totalTask, completedTask, progression, desc, member, id } = data
 
     return (
         <Card bodyClass="h-full">
             <div className="flex flex-col justify-between h-full">
                 <div className="flex justify-between">
-                    <Link to="/app/scrum-board">
+                    <Link to={`/properties/${id}`}>
                         <h6>{name}</h6>
                     </Link>
                     <ItemDropdown />
