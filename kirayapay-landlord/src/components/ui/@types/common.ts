@@ -15,7 +15,7 @@ export type WithProps = CommonProps
 // eslint-disable-next-line @typescript-eslint/no-namespace
 export declare namespace TypeAttributes {
     type Size = 'lg' | 'md' | 'sm' | 'xs'
-    type Shape = 'round' | 'circle' | 'none'
+    type Shape = 'round' | 'circle' | 'none' | 'rounded'
     type Status = 'success' | 'warning' | 'danger' | 'info'
     type FormLayout = 'horizontal' | 'vertical' | 'inline'
     type ControlSize = 'lg' | 'md' | 'sm'

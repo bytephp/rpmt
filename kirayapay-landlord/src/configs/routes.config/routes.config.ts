@@ -30,6 +30,13 @@ export const protectedRoutes = [
         authority: [],
     },
     {
+        key: 'properties.unit.show',
+        path: '/properties/:propertyId/unit/:unitId',
+        component: lazy(() => import('@/views/properties/propertyUnitShow')),
+        authority: [],
+    },
+    
+    {
         key: 'properties.show',
         path: '/properties/:propertyId',
         component: lazy(() => import('@/views/properties/propertiesShow')),

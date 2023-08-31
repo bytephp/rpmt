@@ -13,17 +13,6 @@ export const BuildingEdit: React.FC<IResourceComponentsProps> = () => {
     <Edit saveButtonProps={saveButtonProps}>
       <Form {...formProps} layout="vertical">
         <Form.Item
-          label={translate("building.fields.id")}
-          name={["id"]}
-          rules={[
-            {
-              required: true,
-            },
-          ]}
-        >
-          <Input readOnly disabled />
-        </Form.Item>
-        <Form.Item
           label={translate("building.fields.name")}
           name={["name"]}
           rules={[
@@ -65,7 +54,9 @@ export const BuildingEdit: React.FC<IResourceComponentsProps> = () => {
             },
           ]}
         >
-          <Input />
+          <Input type="number" onChange={(e) => {
+            formProps.form?.setFieldValue("unitsAvailable", parseInt(e.target.value))
+          }} />
         </Form.Item>
       </Form>
     </Edit>

@@ -178,6 +178,27 @@
       "show": "Show Project"
     }
   },
+  "building":{
+    "fields": {
+      "id": "Building ID",
+      "name": "Title",
+      "description": "Description",
+      "projectType": "Building Type",
+      "developer": "Developer",
+      "status": "Building Status",
+      "project": "Project",
+      "unitsAvailable": "Units Available",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "category": "Category"
+    },
+    "titles": {
+      "create": "Create Project",
+      "edit": "Edit Project",
+      "list": "Projects",
+      "show": "Show Project"
+    }
+  },
   "table": {
     "actions": "Actions"
   }

@@ -41,7 +41,7 @@ const PageHeader = (props: PageHeader) => {
     const {
         pageTitle,
         addButtonTitle,
-        backButton =false,
+        backButton = false,
         href,
         showSortButton = true,
         showSearch = true,

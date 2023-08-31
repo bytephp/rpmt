@@ -27,9 +27,7 @@ import { serialize } from './responses';
     },
   },
   routes: {
-    deleteOneBase: {
-      returnDeleted: false,
-    },
+    
   },
   query: {
     alwaysPaginate: true,

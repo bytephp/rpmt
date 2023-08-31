@@ -1,19 +1,17 @@
 // import ProjectListContent from './components/propertyListContent'
 import Container from '@/components/shared/Container'
 import { PageHeader } from '@/components/shared/pageHeader'
-import PropertyShowContent from './components/propertyShowContent'
-// import { DataTable } from '@/components/shared/table'
-// import ProjectListContent from './components/propertyListContent'
+import PropertyUnitShowContent from './components/unit/propertyUnitShowContent'
 
-const PropertiesShow = () => {
+const PropertyUnitShow = () => {
     return (
         <Container className="h-full">
             <PageHeader backButton={true} pageTitle={'Back'} showSortButton={false} showSearch={false} />
-            <PropertyShowContent />
+            <PropertyUnitShowContent />
             {/* <ProjectListContent /> */}
             {/* <DataTable /> */}
         </Container>
     )
 }
 
-export default PropertiesShow
+export default PropertyUnitShow

@@ -20,7 +20,7 @@ export const BuildingList: React.FC<IResourceComponentsProps> = () => {
   });
 
   return (
-    <List>
+    <List title='Buildings'>
       <Table {...tableProps} rowKey="id">
         <Table.Column
           dataIndex="id"
