@@ -2,6 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import {
     apiGetProjectList,
     apiGetScrumBoardtMembers,
+    apiGetProjectDetail,
     apiPutProjectList,
 } from '@/services/ProjectService'
 
@@ -26,22 +27,22 @@ type Project = {
     member: Omit<Member, 'id' | 'email'>[]
 }
 
-type PageHeader = Project[]
+type Property = Project[]
 
 type Query = {
     sort: 'ASC' | 'DESC' | ''
     search: ''
 }
 
-type GetPageHeaderRequest = Query
+type GetPropertyRequest = Query
 
-type GetPageHeaderResponse = PageHeader
+type GetPropertyResponse = Property
 
 type GetScrumBoardtMembersResponse = {
     allMembers: Member[]
 }
 
-type PutPageHeaderRequest = {
+type PutPropertyRequest = {
     id: string
     name: string
     desc: string
@@ -51,11 +52,11 @@ type PutPageHeaderRequest = {
     member?: Omit<Member, 'email' | 'id'>[]
 }
 
-type PutPageHeaderResponse = PageHeader
+type PutPropertyResponse = Property
 
-export type PageHeaderState = {
+export type PropertyState = {
     loading: boolean
-    pageHeader: PageHeader
+    property: Property
     allMembers: {
         value: string
         label: string
@@ -66,16 +67,26 @@ export type PageHeaderState = {
     newProjectDialog: boolean
 }
 
-export const SLICE_NAME = 'pageHeader'
+export const SLICE_NAME = 'property'
 
 export const getList = createAsyncThunk(
     SLICE_NAME + '/getList',
-    async (data: GetPageHeaderRequest) => {
-        const response = await apiGetProjectList<
-            GetPageHeaderResponse,
-            GetPageHeaderRequest
+    async (data: GetPropertyRequest) => {
+        const response: any = await apiGetProjectList<
+            GetPropertyResponse,
+            GetPropertyRequest
         >(data)
-        return response.data
+        return response.data?.data
+    }
+)
+export const getDetail = createAsyncThunk(
+    SLICE_NAME + '/getDetail',
+    async (data: GetPropertyRequest) => {
+        const response: any = await apiGetProjectDetail<
+            GetPropertyResponse,
+            GetPropertyRequest
+        >(data)
+        return response.data?.data
     }
 )
 
@@ -95,18 +106,18 @@ export const getMembers = createAsyncThunk(
 
 export const putProject = createAsyncThunk(
     SLICE_NAME + '/putProject',
-    async (data: PutPageHeaderRequest) => {
+    async (data: PutPropertyRequest) => {
         const response = await apiPutProjectList<
-            PutPageHeaderResponse,
-            PutPageHeaderRequest
+            PutPropertyResponse,
+            PutPropertyRequest
         >(data)
         return response.data
     }
 )
 
-const initialState: PageHeaderState = {
+const initialState: PropertyState = {
     loading: false,
-    pageHeader: [],
+    property: [],
     allMembers: [],
     view: 'grid',
     query: {
@@ -116,7 +127,7 @@ const initialState: PageHeaderState = {
     newProjectDialog: false,
 }
 
-const pageHeaderSlice = createSlice({
+const propertySlice = createSlice({
     name: `${SLICE_NAME}/state`,
     initialState,
     reducers: {
@@ -128,14 +139,14 @@ const pageHeaderSlice = createSlice({
         },
         setSearch: (state, action) => {
             console.log(action);
-            
+
             state.query.search = action.payload
         },
     },
     extraReducers: (builder) => {
         builder
             .addCase(getList.fulfilled, (state, action) => {
-                state.pageHeader = action.payload
+                state.property = action.payload
                 state.loading = false
             })
             .addCase(getList.pending, (state) => {
@@ -145,12 +156,12 @@ const pageHeaderSlice = createSlice({
                 state.allMembers = action.payload
             })
             .addCase(putProject.fulfilled, (state, action) => {
-                state.pageHeader = action.payload
+                state.property = action.payload
             })
     },
 })
 
 export const { toggleView, toggleSort, setSearch } =
-    pageHeaderSlice.actions
+    propertySlice.actions
 
-export default pageHeaderSlice.reducer
+export default propertySlice.reducer

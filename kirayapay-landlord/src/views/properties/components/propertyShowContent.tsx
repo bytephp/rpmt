@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 import classNames from 'classnames'
 import Spinner from '@/components/ui/Spinner'
-import { getList, useAppDispatch, useAppSelector } from '@/components/shared/pageHeader/store'
 import PropertyHeader from './propertyHeader'
-// import { getList, useAppDispatch, useAppSelector } from '../store'
+import { getDetail, useAppDispatch, useAppSelector } from '@/views/properties/store'
+
 import { HiOutlineHome, HiOutlineUser, HiOutlinePhone } from 'react-icons/hi'
 import Tabs from '@/components/ui/Tabs'
 import Badge from '@/components/ui/Badge'
@@ -15,14 +15,18 @@ const { TabNav, TabList, TabContent } = Tabs
 const PropertyShowContent = () => {
     const dispatch = useAppDispatch()
 
-    const loading = useAppSelector((state) => state.pageHeader.data.loading)
+    const loading = useAppSelector((state) => state.property.data.loading)
 
     const { sort, search } = useAppSelector(
-        (state) => state.pageHeader.data.query
+        (state) => state.property.data.query
     )
+    const projectDetails = useAppSelector(
+        (state) => state.property.data.property
+    )[0]
 
+    
     useEffect(() => {
-        // dispatch(getList({ sort, search }))
+        dispatch(getDetail({ sort, search }))
     }, [dispatch, sort, search])
 
     return (
@@ -32,7 +36,7 @@ const PropertyShowContent = () => {
                     <Spinner size={40} />
                 </div>
             )}
-            <PropertyHeader />
+            <PropertyHeader projectDetails={projectDetails}/>
             <Tabs defaultValue="OVERVIEW">
                 <TabList>
                     <TabNav value="OVERVIEW" icon={<HiOutlineHome />}>

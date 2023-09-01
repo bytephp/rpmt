@@ -65,7 +65,7 @@ const PageHeader = (props: PageHeader) => {
     }
 
     const onToggleSort = () => {
-        dispatch(toggleSort(sort === 'asc' ? 'desc' : 'asc'))
+        dispatch(toggleSort(sort === 'ASC' ? 'DESC' : 'ASC'))
     }
 
     // const onAddNewProject = () => {        
@@ -114,13 +114,13 @@ const PageHeader = (props: PageHeader) => {
                             onClick={() => onViewToggle()}
                         />
                     </Tooltip>
-                        <Tooltip title={`Sort: ${sort === 'asc' ? 'A-Z' : 'Z-A'}`}>
+                        <Tooltip title={`Sort: ${sort === 'ASC' ? 'A-Z' : 'Z-A'}`}>
                             <Button
                                 className="hidden md:flex"
                                 variant="plain"
                                 size="sm"
                                 icon={
-                                    sort === 'asc' ? (
+                                    sort === 'ASC' ? (
                                         <HiOutlineSortAscending />
                                     ) : (
                                         <HiOutlineSortDescending />

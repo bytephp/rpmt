@@ -1,3 +1,4 @@
+import jsonToQueryString from '@/utils/urlQuery';
 import ApiService from './ApiService'
 
 export async function apiGetProjectDashboardData<T>() {
@@ -11,8 +12,19 @@ export async function apiGetProjectList<T, U extends Record<string, unknown>>(
     data: U
 ) {
     return ApiService.fetchData<T>({
-        url: '/project/list',
-        method: 'post',
+        // url: `/building${jsonToQueryString(data)}`,
+        url: `/building`,
+        method: 'get',
+        data,
+    })
+}
+export async function apiGetProjectDetail<T, U extends Record<string, unknown>>(
+    data: U
+) {
+    return ApiService.fetchData<T>({
+        // url: `/building${jsonToQueryString(data)}`,
+        url: `/building/6`,
+        method: 'get',
         data,
     })
 }

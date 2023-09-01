@@ -2,8 +2,17 @@ import { Fragment } from 'react'
 import { useEffect } from 'react'
 import classNames from 'classnames'
 import Avatar from '@/components/ui/Avatar'
+import type { CommonProps } from '@/@types/common'
 
-const PropertyHeader = () => {
+
+interface PropertyHeader extends CommonProps {
+    projectDetails?: any
+}
+
+const PropertyHeader = (props: PropertyHeader) => {
+    const {
+        projectDetails
+    } = props
 
     useEffect(() => {
     }, [])
@@ -18,7 +27,7 @@ const PropertyHeader = () => {
                     src="/img/avatars/thumb-1.jpg"
                 />
                 <span>
-                    <h3>Sannidhi Paradise</h3>
+                    <h3>{projectDetails?.name}</h3>
                     <p>Green Glen Layout, Bellandur, Banglore - 560103 </p>
                 </span>
             </div>

@@ -3,19 +3,21 @@ import classNames from 'classnames'
 import GridItem from './GridItem'
 import ListItem from './ListItem'
 import Spinner from '@/components/ui/Spinner'
-import { getList, useAppDispatch, useAppSelector } from '@/components/shared/pageHeader/store'
+import { getList, useAppDispatch, useAppSelector } from '@/views/properties/store'
 // import { getList, useAppDispatch, useAppSelector } from '../store'
 
 const ProjectListContent = () => {
     const dispatch = useAppDispatch()
 
-    const loading = useAppSelector((state) => state.pageHeader.data.loading)
+    const loading = useAppSelector((state) => state.property.data.loading)
     const projectList = useAppSelector(
-        (state) => state.pageHeader.data.pageHeader
+        (state) => state.property.data.property
     )
-    const view = useAppSelector((state) => state.pageHeader.data.view)
+    console.log(projectList);
+    
+    const view = useAppSelector((state) => state.property.data.view)
     const { sort, search } = useAppSelector(
-        (state) => state.pageHeader.data.query
+        (state) => state.property.data.query
     )
 
     useEffect(() => {
