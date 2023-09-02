@@ -15,6 +15,7 @@ const PropertiesList = () => {
             <PageHeader pageTitle={'Properties'} href={'/properties/add'} addButtonTitle={'ADD NEW PROPERTY'} />
             <ProjectListContent />
             {/* <DataTable /> */}
+            
         </Container>
     )
 }

@@ -7,8 +7,8 @@ import {
 import EllipsisButton from '@/components/shared/EllipsisButton'
 
 const dropdownList = [
-    { label: 'Add Flag', value: 'addFlag', icon: <HiOutlineFlag /> },
-    { label: 'Move', value: 'move', icon: <HiOutlineSwitchHorizontal /> },
+    { label: 'Rename project', value: 'addFlag', icon: <HiOutlineFlag /> },
+    { label: 'View details', value: 'move', icon: <HiOutlineSwitchHorizontal /> },
     { label: 'Setting', value: 'projectSetting', icon: <HiOutlineCog /> },
 ]
 

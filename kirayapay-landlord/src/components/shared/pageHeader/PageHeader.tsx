@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState, useCallback } from 'react'
 import Button from '@/components/ui/Button'
 import Input from '@/components/ui/Input'
 import { useNavigate } from 'react-router-dom';
@@ -25,6 +25,7 @@ import ActionLink from '../ActionLink'
 import { injectReducer } from '@/store'
 import reducer from './store'
 import { HiOutlineArrowLeft } from 'react-icons/hi2'
+import Segment from '@/components/ui/Segment';
 
 injectReducer('pageHeader', reducer)
 
@@ -49,6 +50,8 @@ const PageHeader = (props: PageHeader) => {
 
     const navigate = useNavigate();
     const dispatch = useAppDispatch()
+
+    const [singleSegmentValue, setSingleSegmentValue] = useState(['left'])
 
     const inputRef = useRef(null)
 
@@ -81,7 +84,12 @@ const PageHeader = (props: PageHeader) => {
     const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
         debounceFn(e.target.value)
     }
-
+    const onSingleSelectionSegmentChange = useCallback(
+        (val: string[]) => {
+            setSingleSegmentValue(val)
+        },
+        [setSingleSegmentValue]
+    )
     return (
         <div className="lg:flex items-center justify-between mb-4">
             <h3 className={`mb-4 lg:mb-0 flex items-center ${backButton && "cursor-pointer"}`} onClick={() => goBack()}>
@@ -98,6 +106,19 @@ const PageHeader = (props: PageHeader) => {
                         onChange={handleInputChange}
                     />
                 }
+                <Segment
+                    value={singleSegmentValue}
+                    size='sm'
+                    onChange={(val) => onSingleSelectionSegmentChange(val as string[])}
+                >
+                    <Segment.Item value="left">ALL</Segment.Item>
+                    <Segment.Item value="center">
+                        OPEN
+                    </Segment.Item>
+                    <Segment.Item value="right">
+                        RESOLVED
+                    </Segment.Item>
+                </Segment>
                 {
                     showSortButton && <><Tooltip title={view === 'grid' ? 'List view' : 'Grid view'}>
                         <Button

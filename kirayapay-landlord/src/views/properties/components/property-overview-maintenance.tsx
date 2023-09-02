@@ -2,7 +2,9 @@ import Table from '@/components/ui/Table'
 import Button from '@/components/ui/Button'
 import Card from '@/components/ui/Card'
 import { useNavigate } from 'react-router-dom'
-import { HiOutlinePlusCircle } from 'react-icons/hi2'
+import { HiFire, HiOutlinePlusCircle } from 'react-icons/hi2'
+import Avatar from '@/components/ui/Avatar'
+import { Tag } from '@/components/ui'
 
 const { Tr, Th, Td, THead, TBody } = Table
 
@@ -21,15 +23,71 @@ function PropertyMaintenanceOverview() {
             onClick={onViewAllProjects}
         >
             <span className='text-sm'>
-                New Maintenance
+                Create Request
             </span>
         </Button>
     )
 
 
     return (
-        <Card header="Open Maintenance" className='mb-2' bodyClass="p-0" headerExtra={headerExtraContent}>
-            <Table>
+        <Card header="Open Maintenance" className='mb-2' headerExtra={headerExtraContent}>
+            <Card bordered className="mb-2">
+                <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                    <div className="flex items-center gap-3">
+                        <div>
+                            <Avatar
+                                className="bg-emerald-500"
+                                shape="circle"
+                                icon={<HiFire />}
+                            ></Avatar>
+                        </div>
+                        <div className='w-100'>
+                            <div className="flex items-center justify-between">
+                                <h6 className='capitalize'>door not open</h6>
+                                <Tag className="bg-emerald-100 text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-100 rounded-md border-0 mx-2">
+                                    <span className="capitalize">
+                                        Open
+                                    </span>
+                                </Tag>
+                            </div>
+                            <div>
+                                <span>
+                                    Requested by You in 403
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Card>
+            <Card bordered className="mb-2">
+                <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                    <div className="flex items-center gap-3">
+                        <div>
+                            <Avatar
+                                className="bg-emerald-500"
+                                shape="circle"
+                                icon={<HiFire />}
+                            ></Avatar>
+                        </div>
+                        <div className='w-100'>
+                            <div className="flex items-center justify-between capitalize">
+                                <h6>door not open</h6>
+                                <Tag className="bg-emerald-100 text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-100 rounded-md border-0 mx-2">
+                                    <span className="capitalize">
+                                        Open
+                                    </span>
+                                </Tag>
+                            </div>
+                            <div>
+                                <span>
+                                    Requested by You in 403
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Card>
+            {/* <Table>
                 <THead>
                     <Tr>
                         <Th>Unit</Th>
@@ -49,7 +107,7 @@ function PropertyMaintenanceOverview() {
                         <Td>Maria Anders</Td>
                     </Tr>
                 </TBody>
-            </Table>
+            </Table> */}
         </Card>
 
     )

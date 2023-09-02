@@ -55,6 +55,12 @@ export const protectedRoutes = [
         authority: [],
     },
     {
+        key: 'leases.show',
+        path: '/leases/:id',
+        component: lazy(() => import('@/views/leases/leasesShow')),
+        authority: [],
+    },
+    {
         key: 'tenants',
         path: '/tenants',
         component: lazy(() => import('@/views/tenants/tenantList')),
