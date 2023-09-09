@@ -1,7 +1,7 @@
 import { useConfig } from '../ConfigProvider'
 import { FaSort, FaSortUp, FaSortDown } from 'react-icons/fa'
 
-export type SorterProps = { sort?: boolean | 'ASC' | 'DESC' }
+export type SorterProps = { sort?: boolean | 'asc' | 'desc' }
 
 const Sorter = ({ sort }: SorterProps) => {
     const { themeColor, primaryColorLevel } = useConfig()
@@ -13,11 +13,11 @@ const Sorter = ({ sort }: SorterProps) => {
             return <FaSort />
         }
 
-        if (sort === 'ASC') {
+        if (sort === 'asc') {
             return <FaSortUp className={color} />
         }
 
-        if (sort === 'DESC') {
+        if (sort === 'desc') {
             return <FaSortDown className={color} />
         }
 

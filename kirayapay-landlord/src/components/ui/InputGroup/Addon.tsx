@@ -2,7 +2,7 @@ import { forwardRef } from 'react'
 import classNames from 'classnames'
 import { useConfig } from '../ConfigProvider'
 import { useForm } from '../Form/context'
-import { useInputGroup } from '../InputGroup/context'
+import { useInputGroup } from './context'
 import { CONTROL_SIZES } from '../utils/constants'
 import type { CommonProps, TypeAttributes } from '../@types/common'
 

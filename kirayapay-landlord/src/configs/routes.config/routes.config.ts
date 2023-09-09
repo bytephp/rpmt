@@ -35,7 +35,7 @@ export const protectedRoutes = [
         component: lazy(() => import('@/views/properties/propertyUnitShow')),
         authority: [],
     },
-    
+
     {
         key: 'properties.show',
         path: '/properties/:propertyId',
@@ -71,11 +71,5 @@ export const protectedRoutes = [
         path: '/payments',
         component: lazy(() => import('@/views/payments/paymentList')),
         authority: [],
-    },
-    {
-        key: 'pages.accessDenied',
-        path: '/access-denied',
-        component: lazy(() => import('@/views/AccessDenied')),
-        authority: [],
-    },
+    }
 ]

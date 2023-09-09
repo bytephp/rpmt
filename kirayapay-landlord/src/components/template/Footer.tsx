@@ -20,7 +20,7 @@ const FooterContent = () => {
             <div className="">
                 <a
                     className="text-gray"
-                    href=""
+                    href="/#"
                     onClick={(e) => e.preventDefault()}
                 >
                     Term & Conditions
@@ -28,7 +28,7 @@ const FooterContent = () => {
                 <span className="mx-2 text-muted"> | </span>
                 <a
                     className="text-gray"
-                    href=""
+                    href="/#"
                     onClick={(e) => e.preventDefault()}
                 >
                     Privacy & Policy

@@ -33,11 +33,11 @@ export const themeConfig: ThemeConfig = {
     mode: THEME_ENUM.MODE_LIGHT,
     primaryColorLevel: 600,
     cardBordered: true,
-    panelExpand: true,
+    panelExpand: false,
     controlSize: 'md',
     navMode: THEME_ENUM.NAV_MODE_LIGHT,
     layout: {
-        type: THEME_ENUM.LAYOUT_TYPE_CLASSIC,
+        type: THEME_ENUM.LAYOUT_TYPE_MODERN,
         sideNavCollapse: false,
     },
 }

@@ -30,7 +30,7 @@ const AllRoutes = (props: AllRoutesProps) => {
                     path="/"
                     element={<Navigate replace to={authenticatedEntryPath} />}
                 />
-                {protectedRoutes.map((route: any, index) => (
+                {protectedRoutes.map((route, index) => (
                     <Route
                         key={route.key + index}
                         path={route.path}

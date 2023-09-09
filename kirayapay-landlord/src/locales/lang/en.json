@@ -8,8 +8,8 @@
         "tenants": "Tenants",
         "singleMenuItem": "Single menu item",
         "financial": {
-            "financial":"Financial",
-            "payments":"Payments"
+            "financial": "Financial",
+            "payments": "Payments"
         },
         "collapseMenu": {
             "collapseMenu": "Collapse menu item",

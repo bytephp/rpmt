@@ -66,7 +66,7 @@ const navigationConfig: NavigationTree[] = [
         authority: [],
         subMenu: [],
     },
-    
+
     {
         key: 'financial',
         path: '',
