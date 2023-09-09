@@ -8,6 +8,8 @@ import { LandlordModule } from './person/landlord/landlord.module';
 import { TenantModule } from './person/tenant/tenant.module';
 import { BuildLandMappingModule } from './mapping/build-land-mapping/build-land-mapping.module';
 import { LandTenantMappingModule } from './mapping/land-tenant-mapping/land-tenant-mapping.module';
+import { LandlordAppModule } from './app/landlord-app/landlord-app.module';
+import { TenantAppModule } from './app/tenant-app/tenant-app.module';
 
 @Module({
     imports: [
@@ -20,6 +22,8 @@ import { LandTenantMappingModule } from './mapping/land-tenant-mapping/land-tena
         ModulesModule,
         BuildLandMappingModule,
         LandTenantMappingModule,
+        LandlordAppModule,
+        TenantAppModule,
     ],
 })
 export class ModulesModule {}
