@@ -18,6 +18,7 @@ const navigationIcon: NavigationIcons = {
     leases: <HiOutlineClipboardDocumentList />,
     tenants: <HiOutlineKey />,
     payments: <HiOutlineWallet />,
+    expenses: <HiOutlineWallet />,
 }
 
 export default navigationIcon

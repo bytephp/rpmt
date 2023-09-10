@@ -26,7 +26,7 @@ export const protectedRoutes = [
     {
         key: 'properties.add',
         path: '/properties/add',
-        component: lazy(() => import('@/views/properties/propertiesList')),
+        component: lazy(() => import('@/views/properties/propertiesAdd')),
         authority: [],
     },
     {
@@ -70,6 +70,12 @@ export const protectedRoutes = [
         key: 'financial.payments',
         path: '/payments',
         component: lazy(() => import('@/views/payments/paymentList')),
+        authority: [],
+    },
+    {
+        key: 'financial.expenses',
+        path: '/expenses',
+        component: lazy(() => import('@/views/expenses/expensesList')),
         authority: [],
     }
 ]

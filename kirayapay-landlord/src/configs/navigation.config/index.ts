@@ -86,6 +86,16 @@ const navigationConfig: NavigationTree[] = [
                 authority: [],
                 subMenu: [],
             },
+            {
+                key: 'financial.expenses',
+                path: '/expenses',
+                title: 'Expenses',
+                translateKey: 'nav.financial.expenses',
+                icon: 'expenses',
+                type: NAV_ITEM_TYPE_ITEM,
+                authority: [],
+                subMenu: [],
+            },
         ],
     },
 ]

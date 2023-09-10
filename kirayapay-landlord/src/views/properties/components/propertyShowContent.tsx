@@ -16,16 +16,16 @@ const { TabNav, TabList, TabContent } = Tabs
 
 const PropertyShowContent = () => {
     
-    const dispatch = useAppDispatch()
+    // const dispatch = useAppDispatch()
 
-    const loading = useAppSelector((state) => state.property.data.loading)
+    // const loading = useAppSelector((state) => state.property.data.loading)
 
-    const { sort, search } = useAppSelector(
-        (state) => state.property.data.query
-    )
-    const projectDetails = useAppSelector(
-        (state) => state.property.data.property
-    )[0]
+    // const { sort, search } = useAppSelector(
+    //     (state) => state.property.data.query
+    // )
+    // const projectDetails = useAppSelector(
+    //     (state) => state.property.data.property
+    // )[0]
     
     const transactionData = [
         {
@@ -78,18 +78,18 @@ const PropertyShowContent = () => {
         }
     ]
     
-    useEffect(() => {
-        dispatch(getDetail({ sort, search }))
-    }, [dispatch, sort, search])
+    // useEffect(() => {
+    //     dispatch(getDetail({ sort, search }))
+    // }, [dispatch, sort, search])
 
     return (
         <div className={classNames('flex flex-col')} >
-            {loading && (
+            {false && (
                 <div className="flex justify-center">
                     <Spinner size={40} />
                 </div>
             )}
-            <PropertyHeader projectDetails={projectDetails}/>
+            {/* <PropertyHeader projectDetails={projectDetails}/> */}
             <Tabs defaultValue="OVERVIEW">
                 <TabList>
                     <TabNav value="OVERVIEW" icon={<HiOutlineHome />}>
@@ -117,7 +117,7 @@ const PropertyShowContent = () => {
                         {/* <PropertyOverview /> */}
                         <DepositWithdrawalTable
                             data={transactionData}
-                            loading={loading}
+                            // loading={loading}
                             // tableData={tableData}
                         />
                     </TabContent>

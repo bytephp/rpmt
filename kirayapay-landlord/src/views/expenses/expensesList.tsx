@@ -1,14 +1,15 @@
-
 import Container from '@/components/shared/Container'
 import { PageHeader } from '@/components/shared/pageHeader'
+import { ExpensesLists } from '@/shared/expenses'
 
-const ChatList = () => {
+const ExpensesList = () => {
     return (
         <Container className="h-full">
-            {/* <PageHeader pageTitle={'Message'} /> */}
+            <ExpensesLists />
+            {/* <PageHeader pageTitle={'Payment'} /> */}
             {/* <ProjectListContent /> */}
         </Container>
     )
 }
 
-export default ChatList
+export default ExpensesList

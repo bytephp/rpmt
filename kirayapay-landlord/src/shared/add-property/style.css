@@ -1,0 +1,523 @@
+.div {
+    align-items: flex-start;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #e6e9f0;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 34px;
+    position: relative;
+    width: 628px;
+    margin: 0 auto;
+}
+
+.div .form {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    width: 560px;
+}
+
+.div .class {
+    height: 415px;
+    max-width: 560px;
+    position: relative;
+    width: 560px;
+}
+
+.div .text-wrapper {
+    color: #033a6d;
+    font-family: "Open Sans-Bold", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    height: 21px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 21px;
+    position: absolute;
+    top: -1px;
+    white-space: nowrap;
+}
+
+.div .heading-which-best {
+    color: #042238;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 24px;
+    font-weight: 600;
+    height: 34px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 34px;
+    position: absolute;
+    top: 20px;
+    white-space: nowrap;
+}
+
+.div .p {
+    color: #042238;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    height: 21px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 21px;
+    position: absolute;
+    top: 58px;
+    white-space: nowrap;
+}
+
+.div .div-hrznskhofn {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    left: 0;
+    position: absolute;
+    top: 96px;
+    width: 560px;
+}
+
+.div .class-2 {
+    height: 238px;
+    position: relative;
+    width: 560px;
+}
+
+.div .label {
+    align-items: center;
+    border: 2px solid;
+    border-color: #acb9c8;
+    border-radius: 4px;
+    display: flex;
+    height: 111px;
+    justify-content: center;
+    left: 0;
+    padding: 15.5px 20.72px 15.5px 20.72px;
+    position: absolute;
+    top: 0;
+    width: 176px;
+}
+
+.div .class-3 {
+    height: 80px;
+    position: relative;
+    width: 134.56px;
+}
+
+.div .SVG-margin {
+    height: 41px;
+    left: 47px;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+
+.div .overlap-group {
+    height: 38px;
+    left: 0;
+    position: absolute;
+    top: 41px;
+    width: 135px;
+}
+
+.div .span {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.div .text-wrapper-2 {
+    color: #042238;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 21px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.div .div-wrapper {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    left: 7px;
+    position: absolute;
+    top: 20px;
+}
+
+.div .text-wrapper-3 {
+    color: #042238;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.div .label-2 {
+    align-items: center;
+    border: 2px solid;
+    border-color: #acb9c8;
+    border-radius: 4px;
+    display: flex;
+    height: 111px;
+    justify-content: center;
+    left: 192px;
+    padding: 13.5px 48.17px;
+    position: absolute;
+    top: 0;
+    width: 176px;
+}
+
+.div .class-4 {
+    height: 84px;
+    position: relative;
+    width: 79.66px;
+}
+
+.div .img {
+    height: 45px;
+    left: 20px;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+
+.div .overlap-group-2 {
+    height: 38px;
+    left: 0;
+    position: absolute;
+    top: 45px;
+    width: 80px;
+}
+
+.div .span-2 {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    left: 0;
+    position: absolute;
+    top: 20px;
+}
+
+.div .label-3 {
+    align-items: center;
+    border: 2px solid;
+    border-color: #acb9c8;
+    border-radius: 4px;
+    display: flex;
+    height: 111px;
+    justify-content: center;
+    left: 384px;
+    padding: 12px 40.06px;
+    position: absolute;
+    top: 0;
+    width: 176px;
+}
+
+.div .class-5 {
+    height: 87px;
+    position: relative;
+    width: 95.88px;
+}
+
+.div .SVG-margin-2 {
+    height: 48px;
+    left: 31px;
+    position: absolute;
+    top: 0;
+    width: 33px;
+}
+
+.div .overlap-group-3 {
+    height: 38px;
+    left: 0;
+    position: absolute;
+    top: 48px;
+    width: 96px;
+}
+
+.div .span-3 {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    left: 8px;
+    position: absolute;
+    top: 20px;
+}
+
+.div .label-4 {
+    align-items: center;
+    border: 2px solid;
+    border-color: #acb9c8;
+    border-radius: 4px;
+    display: flex;
+    height: 111px;
+    justify-content: center;
+    left: 0;
+    padding: 15.5px 20.08px 15.5px 20.06px;
+    position: absolute;
+    top: 127px;
+    width: 176px;
+}
+
+.div .class-6 {
+    height: 80px;
+    position: relative;
+    width: 135.86px;
+}
+
+.div .SVG-margin-3 {
+    height: 41px;
+    left: 48px;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+
+.div .overlap-group-4 {
+    height: 38px;
+    left: 0;
+    position: absolute;
+    top: 41px;
+    width: 136px;
+}
+
+.div .span-4 {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    left: 7px;
+    position: absolute;
+    top: 0;
+}
+
+.div .label-5 {
+    align-items: center;
+    border: 2px solid;
+    border-color: #acb9c8;
+    border-radius: 4px;
+    display: flex;
+    height: 111px;
+    justify-content: center;
+    left: 192px;
+    padding: 12px 21.83px 12px 21.83px;
+    position: absolute;
+    top: 127px;
+    width: 176px;
+}
+
+.div .class-7 {
+    height: 87px;
+    position: relative;
+    width: 132.34px;
+}
+
+.div .SVG-margin-4 {
+    height: 48px;
+    left: 51px;
+    position: absolute;
+    top: 0;
+    width: 31px;
+}
+
+.div .overlap-group-5 {
+    height: 38px;
+    left: 0;
+    position: absolute;
+    top: 48px;
+    width: 133px;
+}
+
+.div .label-6 {
+    align-items: center;
+    border: 2px solid;
+    border-color: #2370a3;
+    border-radius: 4px;
+    display: flex;
+    height: 111px;
+    justify-content: center;
+    left: 384px;
+    padding: 12px 20.81px 12px 20.8px;
+    position: absolute;
+    top: 127px;
+    width: 176px;
+}
+
+.div .class-8 {
+    height: 87px;
+    position: relative;
+    width: 134.39px;
+}
+
+.div .SVG-margin-5 {
+    height: 48px;
+    left: 47px;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+
+.div .overlap-group-6 {
+    height: 38px;
+    left: 0;
+    position: absolute;
+    top: 48px;
+    width: 135px;
+}
+
+.div .span-5 {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    left: 26px;
+    position: absolute;
+    top: 0;
+}
+
+.div .class-9 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+    width: 560px;
+}
+
+.div .label-7 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 2.83px;
+    padding: 0px 291.17px 0px 0px;
+    position: relative;
+    width: 560px;
+}
+
+.div .text-wrapper-4 {
+    color: #042238;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 21px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.div .text-wrapper-5 {
+    color: #2370a3;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 21px;
+    margin-top: -1px;
+    position: relative;
+    text-decoration: underline;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.div .class-10 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    gap: 24px 0px;
+    padding: 0px 432.77px 12px 0px;
+    position: relative;
+    width: 560px;
+}
+
+.div .label-8 {
+    height: 28px;
+    position: relative;
+    width: 53.56px;
+}
+
+.div .div-wrapper-2 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    left: 20px;
+    padding: 0px 0px 4px 8px;
+    position: absolute;
+    top: 0;
+}
+
+.div .text-wrapper-6 {
+    color: #042238;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.div .label-SVG {
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    width: 20px;
+}
+
+.div .label-9 {
+    height: 28px;
+    position: relative;
+    width: 49.67px;
+}
+
+.div .button {
+    all: unset;
+    align-items: center;
+    background-color: #033a6d;
+    border-radius: 22px;
+    box-sizing: border-box;
+    display: flex;
+    height: 44px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 2px 96.9px 2px 97.1px;
+    position: relative;
+    width: 232px;
+}
+
+.div .next {
+    color: #ffffff;
+    font-family: "Open Sans-Bold", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    line-height: 40px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+}

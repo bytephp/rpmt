@@ -1,0 +1,100 @@
+.property-cards {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 666px;
+    position: relative;
+    width: 907px;
+}
+
+.property-cards .div-2 {
+    align-items: flex-end;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    position: relative;
+    width: 907px;
+}
+
+.property-cards .div-wrapper-2 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    position: relative;
+}
+
+.property-cards .text-wrapper-2 {
+    color: #042238;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 44px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.property-cards .link {
+    align-items: center;
+    border: 2px solid;
+    border-color: #033a6d;
+    border-radius: 22px;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    height: 44px;
+    justify-content: center;
+    max-width: 200px;
+    overflow: hidden;
+    padding: 2px 26.16px 2px 26.84px;
+    position: relative;
+}
+
+.property-cards .add-new-property {
+    color: #033a6d;
+    font-family: "Open Sans-Bold", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    line-height: 40px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.property-cards .grid-grid-rowgroup {
+    align-items: flex-start;
+    display: flex;
+    gap: 16px;
+    height: 420px;
+    max-height: 420px;
+    max-width: 960px;
+    padding: 0px 0px 16px;
+    position: relative;
+    width: 907px;
+}
+
+.property-cards .div-3 {
+    align-items: flex-start;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #e6e9f0;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    height: 607px;
+    margin-bottom: -203px;
+    padding: 10px;
+    position: relative;
+    width: 907px;
+}
+
+.property-cards .property-card-instance {
+    margin-bottom: -1px !important;
+}

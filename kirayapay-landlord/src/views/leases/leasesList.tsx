@@ -1,13 +1,15 @@
 import Container from '@/components/shared/Container'
 import { PageHeader } from '@/components/shared/pageHeader'
 import LeasesListContent from './components/leasesListContent'
+import { LeasesLists } from '@/shared/lease'
 
 const LeasesList = () => {
     return (
         <Container className="h-full">
-            <PageHeader pageTitle={'Leases'} href={'/leases/add'} addButtonTitle={'Add New Lease'} />
+            <LeasesLists />
+            {/* <PageHeader pageTitle={'Leases'} href={'/leases/add'} addButtonTitle={'Add New Lease'} /> */}
             {/* <ProjectListContent /> */}
-            <LeasesListContent />
+            {/* <LeasesListContent /> */}
         </Container>
     )
 }

@@ -8,15 +8,18 @@ import { injectReducer } from '@/store'
 import reducer from './store'
 import { PropertyCardGrid } from '@/shared/propertyCard/PropertyCardGrid'
 import { Card } from '@/components/ui'
+import { PropertySteps } from '@/shared/add-property'
 
 // injectReducer('property', reducer)
 
-const PropertiesList = () => {
+const PropertiesAdd = () => {
     return (
         <Container className="h-full">
 
-            <PageHeader pageTitle={'Properties'} href={'/properties/add'} addButtonTitle={'ADD NEW PROPERTY'} />
-            <PropertyCardGrid />
+            <PageHeader pageTitle={'Back'} backButton={true}/>
+            <PropertySteps />
+
+            {/* <PropertyCardGrid /> */}
             {/* <ProjectListContent /> */}
             {/* <DataTable /> */}
             
@@ -24,4 +27,4 @@ const PropertiesList = () => {
     )
 }
 
-export default PropertiesList
+export default PropertiesAdd

@@ -4,7 +4,7 @@ import { PageHeader } from '@/components/shared/pageHeader'
 const PaymentList = () => {
     return (
         <Container className="h-full">
-            <PageHeader pageTitle={'Payment'} />
+            {/* <PageHeader pageTitle={'Payment'} /> */}
             {/* <ProjectListContent /> */}
         </Container>
     )
