@@ -12,7 +12,7 @@ const PropertyOverview = ({ data = [] }: ProjectsProps) => {
     return (
         <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-2">
             <PropertyUnitTable />
-            <PropertyOverviewAnalytics />
+            {/* <PropertyOverviewAnalytics /> */}
             <PropertyMaintenanceOverview />
         </div>
     )

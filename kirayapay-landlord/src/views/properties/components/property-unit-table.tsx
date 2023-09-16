@@ -36,69 +36,63 @@ function PropertyUnitTable() {
 
 
     return (
-        <Card header="Units & Rooms" className='mb-2' bodyClass="" headerExtra={headerExtraContent}>
-            <div className="unit-card  border-top">
-                <div className="flex items-center justify-between mb-3">
-                    <h6 className="mb-1 text-sm font-medium">Flat: <span className="text-lg font-semibold">202, 2nd floor</span></h6>
-                    <Tag className="bg-emerald-100 text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-100 border-0 rounded">
-                        9 Month left
-                    </Tag>
-                </div>
-                <ProgressionBar progression={10} />
-                <div className="flex items-center justify-between mt-2">
-                    {/* <Members members={member} /> */}
-                    <UsersAvatarGroup
-                        nameKey="userName"
-                        imgKey="avatarImg"
-                        avatarProps={{ size: 30 }}
-                        users={userList}
-                    />
-                    <div className="flex items-center rounded-full font-semibold text-xs">
-                        <div className="flex items-center px-2 py-1 border border-gray-300 rounded-full">
-                            <HiOutlineClipboardCheck className="text-base" />
-                            <span className="ml-1 rtl:mr-1 whitespace-nowrap">
-                                {1} / {11}
-                            </span>
+        <Card header="Units & Rooms" className='mb-2' bodyClass="p-2 units" headerExtra={headerExtraContent}>
+            <Card bordered className="p-0 mb-2">
+                <div className="unit-card">
+                    <div className="flex items-center justify-between mb-3">
+                        <h6 className="mb-1 text-sm font-medium">Flat: <span className="text-lg font-semibold">202, 2nd floor</span></h6>
+                        <Tag className="bg-emerald-100 text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-100 border-0 rounded">
+                            9 Month left
+                        </Tag>
+                    </div>
+                    <ProgressionBar progression={10} />
+                    <div className="flex items-center justify-between mt-2">
+                        {/* <Members members={member} /> */}
+                        <UsersAvatarGroup
+                            nameKey="userName"
+                            imgKey="avatarImg"
+                            avatarProps={{ size: 30 }}
+                            users={userList}
+                        />
+                        <div className="flex items-center rounded-full font-semibold text-xs">
+                            <div className="flex items-center px-2 py-1 border border-gray-300 rounded-full">
+                                <HiOutlineClipboardCheck className="text-base" />
+                                <span className="ml-1 rtl:mr-1 whitespace-nowrap">
+                                    {1} / {11}
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            {/* <Table>
-                <THead>
-                    <Tr>
-                        <Th>Unit</Th>
-                        <Th>Rent</Th>
-                        <Th>Tenant</Th>
-                        <Th></Th>
-                    </Tr>
-                </THead>
-                <TBody>
-                    <Tr>
-                        <Td>403</Td>
-                        <Td>$1000 </Td>
-                        <Td>Maria Anders</Td>
-                        <Td>
-                            <Button
-                                size="sm"
-                                variant="twoTone"
-                                color='blue-400'
-                                shape='circle'
-                                icon={<HiMiniArrowUpRight />}
-                                onClick={() => { onViewProjectsUnit(1) }}
-                            >
-                                <span className='text-sm'>
-                                    View Unit
+            </Card>
+            <Card bordered className="p-0">
+                <div className="unit-card">
+                    <div className="flex items-center justify-between mb-3">
+                        <h6 className="mb-1 text-sm font-medium">Flat: <span className="text-lg font-semibold">202, 2nd floor</span></h6>
+                        <Tag className="bg-emerald-100 text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-100 border-0 rounded">
+                            9 Month left
+                        </Tag>
+                    </div>
+                    <ProgressionBar progression={10} />
+                    <div className="flex items-center justify-between mt-2">
+                        {/* <Members members={member} /> */}
+                        <UsersAvatarGroup
+                            nameKey="userName"
+                            imgKey="avatarImg"
+                            avatarProps={{ size: 30 }}
+                            users={userList}
+                        />
+                        <div className="flex items-center rounded-full font-semibold text-xs">
+                            <div className="flex items-center px-2 py-1 border border-gray-300 rounded-full">
+                                <HiOutlineClipboardCheck className="text-base" />
+                                <span className="ml-1 rtl:mr-1 whitespace-nowrap">
+                                    {1} / {11}
                                 </span>
-                            </Button>
-                        </Td>
-                    </Tr>
-                    <Tr>
-                        <Td>403</Td>
-                        <Td>$1000 </Td>
-                        <Td>Maria Anders</Td>
-                    </Tr>
-                </TBody>
-            </Table> */}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Card>
         </Card>
 
     )

@@ -20,7 +20,13 @@ export const protectedRoutes = [
     {
         key: 'properties',
         path: '/properties',
-        component: lazy(() => import('@/views/properties/propertiesList')),
+        component: lazy(() => import('@/views/property/propertyList')),
+        authority: [],
+    },
+    {
+        key: 'properties.show',
+        path: '/properties/:propertyId',
+        component: lazy(() => import('@/views/property/propertyShow')),
         authority: [],
     },
     {
@@ -36,12 +42,6 @@ export const protectedRoutes = [
         authority: [],
     },
 
-    {
-        key: 'properties.show',
-        path: '/properties/:propertyId',
-        component: lazy(() => import('@/views/properties/propertiesShow')),
-        authority: [],
-    },
     {
         key: 'maintenance',
         path: '/maintenance',

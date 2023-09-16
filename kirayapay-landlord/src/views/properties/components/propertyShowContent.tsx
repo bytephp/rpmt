@@ -89,7 +89,7 @@ const PropertyShowContent = () => {
                     <Spinner size={40} />
                 </div>
             )}
-            {/* <PropertyHeader projectDetails={projectDetails}/> */}
+            <PropertyHeader/>
             <Tabs defaultValue="OVERVIEW">
                 <TabList>
                     <TabNav value="OVERVIEW" icon={<HiOutlineHome />}>

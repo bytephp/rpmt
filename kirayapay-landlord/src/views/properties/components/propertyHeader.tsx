@@ -18,8 +18,8 @@ const PropertyHeader = (props: PropertyHeader) => {
     }, [])
 
     return (
-        <>
-            <div className="flex items-center">
+        <div className="flex items-center justify-between my-4">
+            <div className="flex items-start">
                 <Avatar
                     size={"lg"}
                     className="mr-2"
@@ -27,12 +27,12 @@ const PropertyHeader = (props: PropertyHeader) => {
                     src="/img/avatars/thumb-1.jpg"
                 />
                 <span>
-                    <h3>{projectDetails?.name}</h3>
+                    <h3>projectDetails?.name</h3>
                     <p>Green Glen Layout, Bellandur, Banglore - 560103 </p>
                 </span>
             </div>
-            <div className="flex items-center my-2">
-                <div className="flex items-center mr-4">
+            <div className="flex flex-col items-end">
+                <div className="flex items-end">
                     <p className="font-normal text-md mr-1">
                         RENTAL ID:
                     </p>
@@ -40,7 +40,7 @@ const PropertyHeader = (props: PropertyHeader) => {
                         1263852
                     </p>
                 </div>
-                <div className="flex items-center mr-4">
+                <div className="flex items-end">
                     <p className="font-normal text-md mr-1">
                         RENT:
                     </p>
@@ -49,8 +49,8 @@ const PropertyHeader = (props: PropertyHeader) => {
                     </p>
                 </div>
             </div>
+        </div>
 
-        </>
     )
 }
 
