@@ -1,16 +1,16 @@
 import { Injectable, Logger, UnauthorizedException } from '@nestjs/common';
 import { PassportStrategy } from '@nestjs/passport';
 import { Strategy } from 'passport-local';
-import { AdminAuthService } from '../admin-auth.service';
+import { LandlordAuthService } from '../landlord-auth.service';
 import { JwtRefreshTokenStrategy } from './jwt-refresh-token.strategy';
 
 @Injectable()
 export class LocalStrategy extends PassportStrategy(Strategy) {
   private readonly logger = new Logger(JwtRefreshTokenStrategy.name);
 
-  constructor(private authService: AdminAuthService) {
+  constructor(private authService: LandlordAuthService) {
     super({ usernameField: 'username' });
-    this.logger.log('Admin LocalStrategy initialized');
+    this.logger.log('Landlord LocalStrategy initialized');
   }
 
   async validate(username: string, password: string): Promise<any> {

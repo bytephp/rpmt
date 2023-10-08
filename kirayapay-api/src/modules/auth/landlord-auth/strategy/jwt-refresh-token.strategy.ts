@@ -2,7 +2,7 @@ import { ExtractJwt, Strategy } from 'passport-jwt';
 import { PassportStrategy } from '@nestjs/passport';
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import { SuperAdminService } from '@person/super-admin/super-admin.service';
+import { LandlordService } from '@person/landlord/landlord.service';
 // import { UsersService } from '../../users/users.service';
 import { Logger } from '@nestjs/common';
 import { JwtPayload } from '../jwt-payload.interface';
@@ -16,14 +16,14 @@ export class JwtRefreshTokenStrategy extends PassportStrategy(
 
   constructor(
     private readonly jwtService: JwtService,
-    private readonly usersService: SuperAdminService,
+    private readonly usersService: LandlordService,
   ) {
     super({
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
       ignoreExpiration: false,
       secretOrKey: process.env.JWT_SECRET || 'secret',
     });
-    this.logger.log('Admin JwtRefreshTokenStrategy initialized');
+    this.logger.log('Landlord JwtRefreshTokenStrategy initialized');
   }
 
   async validate(payload: JwtPayload): Promise<any> {

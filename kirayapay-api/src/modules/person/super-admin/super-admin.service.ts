@@ -12,7 +12,6 @@ export class SuperAdminService extends TypeOrmCrudService<SuperAdmin> {
   }
 
   async create(registerUserDto: CreateSuperAdminDto): Promise<SuperAdmin> {
-    console.log(registerUserDto);
     
     const { username, password } = registerUserDto;
 

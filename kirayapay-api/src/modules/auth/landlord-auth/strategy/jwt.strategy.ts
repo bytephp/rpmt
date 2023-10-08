@@ -1,29 +1,20 @@
-import { ExtractJwt, Strategy } from 'passport-jwt';
+import { Injectable, Logger, UnauthorizedException } from '@nestjs/common';
 import { PassportStrategy } from '@nestjs/passport';
-import { Injectable, UnauthorizedException } from '@nestjs/common';
-import { JwtService } from '@nestjs/jwt';
-import { SuperAdminService } from '@person/super-admin/super-admin.service';
+import { Strategy, ExtractJwt } from 'passport-jwt';
 // import { UsersService } from '../../users/users.service';
-import { Logger } from '@nestjs/common';
 import { JwtPayload } from '../jwt-payload.interface';
-
+import { JwtRefreshTokenStrategy } from './jwt-refresh-token.strategy';
+import { LandlordService } from '@person/landlord/landlord.service';
 @Injectable()
-export class JwtRefreshTokenStrategy extends PassportStrategy(
-  Strategy,
-  'jwt-refresh-token',
-) {
+export class JwtStrategy extends PassportStrategy(Strategy) {
   private readonly logger = new Logger(JwtRefreshTokenStrategy.name);
-
-  constructor(
-    private readonly jwtService: JwtService,
-    private readonly usersService: SuperAdminService,
-  ) {
+  constructor(private readonly usersService: LandlordService) {
     super({
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
       ignoreExpiration: false,
       secretOrKey: process.env.JWT_SECRET || 'secret',
     });
-    this.logger.log('Admin JwtRefreshTokenStrategy initialized');
+    this.logger.log('Landlord JwtStrategy initialized');
   }
 
   async validate(payload: JwtPayload): Promise<any> {
