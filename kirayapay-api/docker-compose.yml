@@ -8,3 +8,15 @@ services:
       - database.env
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  cache:
+    image: redis:6
+    env_file:
+      - .env
+    ports:
+      - "6379:6379"
+
+  redisinsight:
+    image: redislabs/redisinsight
+    ports:
+      - "8001:8001"

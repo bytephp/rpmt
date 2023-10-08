@@ -10,9 +10,11 @@ import { BuildLandMappingModule } from './mapping/build-land-mapping/build-land-
 import { LandTenantMappingModule } from './mapping/land-tenant-mapping/land-tenant-mapping.module';
 import { LandlordAppModule } from './app/landlord-app/landlord-app.module';
 import { TenantAppModule } from './app/tenant-app/tenant-app.module';
+import { AuthModulesModule } from './auth/auth.module';
 
 @Module({
     imports: [
+        AuthModulesModule,
         ProjectModule,
         BuildingModule,
         BuildingUnitModule,

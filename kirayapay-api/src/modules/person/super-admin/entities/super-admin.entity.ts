@@ -12,6 +12,7 @@ import {
 import { Type } from 'class-transformer';
 import { ApiProperty } from '@nestjs/swagger'
 import { faker } from '@faker-js/faker';
+import * as bcrypt from 'bcrypt';
 
 import { BaseEntity, PersonName, socialLogin } from '@shared/entity/base-entity';
 
@@ -39,8 +40,8 @@ export class SuperAdmin extends BaseEntity {
     @IsNumber()
     @MaxLength(10)
     @Column({ nullable: true })
-    @ApiProperty({ type: 'number', description: 'Contact phone', example: 9711048756, })
-    phone: number;
+    @ApiProperty({ type: 'string', description: 'Contact phone', example: 9711048756, })
+    phone: string;
 
     // whatsapp
     @IsOptional({ always: true })
@@ -67,5 +68,13 @@ export class SuperAdmin extends BaseEntity {
     @Column((type) => socialLogin)
     @ApiProperty({ type: socialLogin, description: 'Social Login' })
     socialAuth: socialLogin;
+
+    @Column()
+    @ApiProperty({ type: 'string', description: 'User Name', example: faker.internet.userName(), })
+    username: string;
+
+    async validatePassword(password: string): Promise<boolean> {
+        return bcrypt.compare(password, this.password);
+    }
 
 }
