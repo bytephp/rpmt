@@ -12,6 +12,7 @@ import {
 import { Type } from 'class-transformer';
 import { ApiProperty } from '@nestjs/swagger'
 import { faker } from '@faker-js/faker';
+import * as bcrypt from 'bcrypt';
 
 import { BaseEntity, PersonName, socialLogin } from '@shared/entity/base-entity';
 import { LandTenantMapping } from '@mapping/land-tenant-mapping/entities/land-tenant-mapping.entity';
@@ -69,6 +70,13 @@ export class Tenant extends BaseEntity {
     @ApiProperty({ type: socialLogin, description: 'Social Login' })
     socialAuth: socialLogin;
 
+    @Column()
+    @ApiProperty({ type: 'string', description: 'User Name', example: faker.internet.userName(), })
+    username: string;
+
+    async validatePassword(password: string): Promise<boolean> {
+        return bcrypt.compare(password, this.password);
+    }
 
     /**
      * Relations
